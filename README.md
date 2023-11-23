@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/tadzik/Terminal-ANSIColor/actions/workflows/test.yml/badge.svg)](https://github.com/tadzik/Terminal-ANSIColor/actions)
+[![Actions Status](https://github.com/lizmat/Terminal-ANSIColor/actions/workflows/test.yml/badge.svg)](https://github.com/lizmat/Terminal-ANSIColor/actions)
 
 NAME
 ====
@@ -29,16 +29,18 @@ color
 
 Given a string with color names, the output produced by `color()` sets the terminal output so the text printed after it will be colored as specified. The following color names are recognised:
 
-    reset bold underline inverse black red green yellow blue
-    magenta cyan white default on_black on_red on_green on_yellow
+    reset bold italic underline inverse
+    bold_off italic_off underline_off inverse_off
+    black red green yellow blue magenta cyan white
+    default on_black on_red on_green on_yellow
     on_blue on_magenta on_cyan on_white on_default
 
 The on_* family of colors correspond to the background colors. One or three numeric color values in the range 0..255 may also be specified:
 
-    N	  # 256-color map: 8 default + 8 bright + 216 rgb cube + 24 gray
-    on_N	  # Same, but background
+    N     # 256-color map: 8 default + 8 bright + 216 rgb cube + 24 gray
+    on_N  # Same, but background
 
-    N,N,N	  # 24-bit r,g,b foreground color
+    N,N,N     # 24-bit r,g,b foreground color
     on_N,N,N  # 24-bit r,g,b background color
 
 colored
@@ -66,7 +68,8 @@ Constants
 
 `Terminal::ANSIColor` provides constants which are just strings of appropriate escape sequences. The following constants are available:
 
-    RESET BOLD UNDERLINE INVERSE BOLD_OFF UNDERLINE_OFF INVERSE_OFF
+    RESET BOLD ITALIC UNDERLINE INVERSE
+    BOLD_OFF ITALIC_OFF UNDERLINE_OFF INVERSE_OFF
 
 AUTHORS
 =======
@@ -84,7 +87,7 @@ COPYRIGHT AND LICENSE
 
 Copyright 2010 - 2018 Tadeusz “tadzik” Sośnierz
 
-Copyright 2022 Elizabeth Mattijsen
+Copyright 2022 - 2023 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the MIT License.
 
