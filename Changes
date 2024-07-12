@@ -1,6 +1,9 @@
 Revision history for Terminal::ANSIColor
 
 {{$NEXT}}
+    - Add badges for each operating system
+    - Add sponsor button
+    - Update copyright year
 
 0.10  2023-11-23T13:08:38+01:00
     - Effectively merge Geoffrey Broadwell's PR, fixing several

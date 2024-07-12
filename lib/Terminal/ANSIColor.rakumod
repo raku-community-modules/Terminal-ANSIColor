@@ -49,12 +49,14 @@ my constant %attrs =
   on_magenta    => "45",
   on_cyan       => "46",
   on_white      => "47",
-  on_default    => "49";
+  on_default    => "49",
+;
 
-my sub color(Str $what) is export {
+my constant %inverted = %attrs.kv.reverse;
+
+my sub color(Str:D $what) is export {
     my @res;
-    my @a = $what.words;
-    for @a -> $attr {
+    for $what.words -> $attr {
         if %attrs.EXISTS-KEY($attr) {
             @res.push: %attrs.AT-KEY($attr);
         }
@@ -72,8 +74,8 @@ my sub color(Str $what) is export {
     "\e[" ~ @res.join(';') ~ "m"
 }
 
-my sub colored (Str $what, Str $how) is export {
-    color($how) ~ $what ~ color('reset');
+my sub colored (str $what, str $how) is export {
+    color($how) ~ $what ~ RESET;
 }
 
 my sub colorvalid (*@a) is export {
@@ -87,21 +89,16 @@ my sub colorvalid (*@a) is export {
 }
 
 my sub colorstrip (*@a) is export {
-    my @res;
-    for @a -> $str {
-        @res.push: $str.subst(/\e\[ <[0..9;]>+ m/, '', :g);
-    }
-    @res.join
+    @a.map({ .subst(/\e\[ <[0..9;]>+ m/, '', :g) }).join
 }
 
-my sub uncolor (Str $what) is export {
+my sub uncolor (Str:D $what) is export {
     my @res;
     my @list = $what.comb(/\d+/);
-    my %inv = %attrs.invert;
     while @list {
         my $elem = @list.shift;
-        if %inv{$elem}:exists {
-            @res.push: %inv{$elem}
+        if %inverted{$elem} -> $inverted  {
+            @res.push: $inverted
         }
         elsif $elem eq '38'|'48' {
             my $type = @list.shift;
@@ -212,7 +209,7 @@ deal to me!
 
 Copyright 2010 - 2018 Tadeusz “tadzik” Sośnierz
 
-Copyright 2022 - 2023 Elizabeth Mattijsen
+Copyright 2022 - 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the MIT License.
 

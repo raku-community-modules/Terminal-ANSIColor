@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/Terminal-ANSIColor/actions/workflows/test.yml/badge.svg)](https://github.com/lizmat/Terminal-ANSIColor/actions)
+[![Actions Status](https://github.com/lizmat/Terminal-ANSIColor/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/Terminal-ANSIColor/actions) [![Actions Status](https://github.com/lizmat/Terminal-ANSIColor/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/Terminal-ANSIColor/actions) [![Actions Status](https://github.com/lizmat/Terminal-ANSIColor/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/Terminal-ANSIColor/actions)
 
 NAME
 ====
