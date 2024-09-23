@@ -1,6 +1,7 @@
 Revision history for Terminal::ANSIColor
 
 {{$NEXT}}
+    - Modernize test file extension
     - Add badges for each operating system
     - Add sponsor button
     - Update copyright year
