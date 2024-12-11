@@ -2,6 +2,9 @@ Revision history for Terminal::ANSIColor
 
 {{$NEXT}}
 
+0.12  2024-12-11T19:28:26+01:00
+    - Turn back into a Raku Community module
+
 0.11  2024-09-23T16:27:56+02:00
     - Modernize test file extension
     - Add badges for each operating system

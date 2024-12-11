@@ -1,5 +1,5 @@
 {
-  "auth": "zef:lizmat",
+  "auth": "zef:raku-community-modules",
   "authors": [
     "Tadeusz “tadzik” Sośnierz",
     "Elizabeth Mattijsen"
@@ -17,7 +17,7 @@
   },
   "resources": [
   ],
-  "source-url": "https://github.com/lizmat/Terminal-ANSIColor.git",
+  "source-url": "https://github.com/raku-community-modules/Terminal-ANSIColor.git",
   "support": {
   },
   "tags": [
@@ -29,5 +29,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.11"
+  "version": "0.12"
 }
