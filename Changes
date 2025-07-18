@@ -2,6 +2,10 @@ Revision history for Terminal::ANSIColor
 
 {{$NEXT}}
 
+0.13  2025-07-18T12:54:12+02:00
+    - Fixed some documentation that escaped the move back to
+      Raku Community Modules
+
 0.12  2024-12-11T19:28:26+01:00
     - Turn back into a Raku Community module
 
