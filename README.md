@@ -29,11 +29,22 @@ color
 
 Given a string with color names, the output produced by `color()` sets the terminal output so the text printed after it will be colored as specified. The following color names are recognised:
 
-    reset bold italic underline inverse
-    bold_off italic_off underline_off inverse_off
-    black red green yellow blue magenta cyan white
-    default on_black on_red on_green on_yellow
-    on_blue on_magenta on_cyan on_white on_default
+    reset bold faint italic blink inverse conceal
+    strike underline dunderline overline
+
+    bold_off italic_off blink_off inverse_off conceal_off
+    strike_off underline_off overline_off
+
+    black red green yellow blue magenta cyan white default
+
+    on_black on_red on_green on_yellow on_blue
+    on_magenta on_cyan on_white on_default
+
+Note a few special cases:
+
+  * `reset`         - Turns off all other attributes/colors
+  * `bold_off`      - Turns off both `bold` and `faint`
+  * `underline_off` - Turns off both `underline` and `dunderline` (double underline)
 
 The on_* family of colors correspond to the background colors. One or three numeric color values in the range 0..255 may also be specified:
 
@@ -68,8 +79,18 @@ Constants
 
 `Terminal::ANSIColor` provides constants which are just strings of appropriate escape sequences. The following constants are available:
 
-    RESET BOLD ITALIC UNDERLINE INVERSE
-    BOLD_OFF ITALIC_OFF UNDERLINE_OFF INVERSE_OFF
+    RESET BOLD FAINT ITALIC BLINK INVERSE CONCEAL
+    STRIKE UNDERLINE DUNDERLINE OVERLINE
+
+    BOLD_OFF ITALIC_OFF BLINK_OFF INVERSE_OFF CONCEAL_OFF
+    STRIKE_OFF UNDERLINE_OFF OVERLINE_OFF
+
+As with the equivalents used by `color()`:
+
+  * `RESET`         - Turns off all other attributes/colors
+  * `BOLD_OFF`      - Turns off both `BOLD` and `FAINT`
+  * `UNDERLINE_OFF` - Turns off both `UNDERLINE` and `DUNDERLINE` (double underline)
+
 
 AUTHORS
 =======
@@ -77,6 +98,8 @@ AUTHORS
   * Tadeusz “tadzik” Sośnierz
 
   * Elizabeth Mattijsen
+
+  * Geoffrey Broadwell
 
 Source can be located at: https://github.com/raku-community-modules/Terminal-ANSIColor . Comments and Pull Requests are welcome.
 

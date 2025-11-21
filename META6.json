@@ -2,7 +2,8 @@
   "auth": "zef:raku-community-modules",
   "authors": [
     "Tadeusz “tadzik” Sośnierz",
-    "Elizabeth Mattijsen"
+    "Elizabeth Mattijsen",
+    "Geoffrey Broadwell"
   ],
   "build-depends": [
   ],
@@ -25,9 +26,12 @@
     "TERM",
     "COLOR",
     "ANSI",
+    "ECMA-48",
+    "SGR",
     "ESCAPE"
   ],
   "test-depends": [
+    "Test::Coverage"
   ],
   "version": "0.13"
 }
