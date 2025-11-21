@@ -2,6 +2,9 @@ Revision history for Terminal::ANSIColor
 
 {{$NEXT}}
 
+0.14  2025-11-21T11:34:18+01:00
+    - Add support for many missing SGR attributes, japhb++
+
 0.13  2025-07-18T12:54:12+02:00
     - Fixed some documentation that escaped the move back to
       Raku Community Modules

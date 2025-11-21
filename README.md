@@ -42,8 +42,10 @@ Given a string with color names, the output produced by `color()` sets the termi
 
 Note a few special cases:
 
-  * `reset`         - Turns off all other attributes/colors
-  * `bold_off`      - Turns off both `bold` and `faint`
+  * `reset` - Turns off all other attributes/colors
+
+  * `bold_off` - Turns off both `bold` and `faint`
+
   * `underline_off` - Turns off both `underline` and `dunderline` (double underline)
 
 The on_* family of colors correspond to the background colors. One or three numeric color values in the range 0..255 may also be specified:
@@ -87,10 +89,11 @@ Constants
 
 As with the equivalents used by `color()`:
 
-  * `RESET`         - Turns off all other attributes/colors
-  * `BOLD_OFF`      - Turns off both `BOLD` and `FAINT`
-  * `UNDERLINE_OFF` - Turns off both `UNDERLINE` and `DUNDERLINE` (double underline)
+  * `RESET` - Turns off all other attributes/colors
 
+  * `BOLD_OFF` - Turns off both `BOLD` and `FAINT`
+
+  * `UNDERLINE_OFF` - Turns off both `UNDERLINE` and `DUNDERLINE` (double underline)
 
 AUTHORS
 =======

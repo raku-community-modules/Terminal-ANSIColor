@@ -12,14 +12,17 @@
   "description": "Color screen output using ANSI escape sequences",
   "license": "MIT",
   "name": "Terminal::ANSIColor",
-  "perl": "6.d",
   "provides": {
     "Terminal::ANSIColor": "lib/Terminal/ANSIColor.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
   "source-url": "https://github.com/raku-community-modules/Terminal-ANSIColor.git",
   "support": {
+    "bugtracker": "https://github.com/raku-community-modules/Terminal-ANSIColor/issues",
+    "email": "community@raku.org",
+    "source": "https://github.com/raku-community-modules/Terminal-ANSIColor.git"
   },
   "tags": [
     "TERMINAL",
@@ -31,7 +34,6 @@
     "ESCAPE"
   ],
   "test-depends": [
-    "Test::Coverage"
   ],
-  "version": "0.13"
+  "version": "0.14"
 }
