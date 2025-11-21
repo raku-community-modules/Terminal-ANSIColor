@@ -30,6 +30,7 @@
     "ESCAPE"
   ],
   "test-depends": [
+    "Test::Coverage"
   ],
   "version": "0.13"
 }
