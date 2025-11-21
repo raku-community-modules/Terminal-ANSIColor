@@ -99,6 +99,8 @@ AUTHORS
 
   * Elizabeth Mattijsen
 
+  * Geoffrey Broadwell
+
 Source can be located at: https://github.com/raku-community-modules/Terminal-ANSIColor . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE

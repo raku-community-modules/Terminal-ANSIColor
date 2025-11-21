@@ -2,7 +2,8 @@
   "auth": "zef:raku-community-modules",
   "authors": [
     "Tadeusz “tadzik” Sośnierz",
-    "Elizabeth Mattijsen"
+    "Elizabeth Mattijsen",
+    "Geoffrey Broadwell"
   ],
   "build-depends": [
   ],
