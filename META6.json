@@ -25,6 +25,8 @@
     "TERM",
     "COLOR",
     "ANSI",
+    "ECMA-48",
+    "SGR",
     "ESCAPE"
   ],
   "test-depends": [
